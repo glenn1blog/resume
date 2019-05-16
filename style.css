@@ -1,0 +1,205 @@
+html {
+	padding: 0.01% 15%;
+	font-family: "微軟正黑體";
+	color: white;
+	scroll-behavior: smooth;
+}
+#gotopbox {
+	position: fixed;
+	right: 8px;
+	bottom: 22px;
+	background-color: rgb(53, 59, 72);
+	padding: 0 0 30px 5px;
+	border-radius: 50%;
+	height: 15px;
+	width: 35px;
+	transition: 0.2S;
+}
+#gotop {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	font-size: 45px;
+	color: rgb(254, 211, 48);
+	transition: 0.2S;
+}
+.gotopA {
+	opacity: 1;
+}
+.gotopB {
+	opacity: 0;
+}
+#all {
+	background-color: rgb(53, 59, 72);
+	padding: 0.5% 1%;
+}
+#border{
+	border: 6px solid white;
+	margin: 5%;
+	display: flex;
+}
+#left {
+	width: 50%;
+	padding-left:4%; 
+	margin-bottom: 6%;
+}
+#right {
+	width: 50%;
+	padding-left:4%; 
+	margin-top: 10%;
+	margin-bottom: 6%;
+}
+h1 {
+	font-size: 55px;
+	margin-bottom: 18px;
+	margin-left: 0.8em;
+}
+h3 {
+
+	color: rgb(254, 211, 48);
+	font-size: 20px;
+	margin-left: 10px;
+}
+h3 > span {
+	color: white;
+	font-size: 16px;
+}
+#timeline > p {
+	margin-left: 20px;
+	color: rgba(255,255,255,0.7);
+}
+.underline {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 3px solid rgb(254, 211, 48);
+}
+#mid-title {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.space {
+	margin-right: 1.3em;
+}
+.button {
+	background-color: rgb(53, 59, 72);
+	color: white;
+	border: 3px solid rgb(254, 211, 48);
+	padding: 0.5% 1%;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.7s;
+}
+
+.button:hover {
+	color: rgb(251, 197, 49);
+	background-color: rgb(255, 255, 255);
+	border: 3px solid rgb(255, 255, 255);
+	transition: all 0.7s;
+	border-radius: 45px;
+}
+.bar {
+	width: 80%;
+	background-color: white;
+	border-radius: 45px;
+	z-index: -1;
+	
+}
+.bar-percent-20 {
+	color: black;
+	font-weight: bold;
+	width: 20%;
+	border-radius: 45px;
+	padding: 0 5px;
+	background-color: rgb(254, 211, 48);
+	animation-name: bar-ani-20;
+	animation-duration: 3s;
+}
+@keyframes bar-ani-20 {
+	from {
+		width:0px;
+	}
+	to {
+		width:20%;
+	}
+}
+.bar-percent-50 {
+	color: black;
+	font-weight: bold;
+	width: 50%;
+	border-radius: 45px;
+	padding: 0 5px;
+	background-color: rgb(254, 211, 48);
+	animation-name: bar-ani-50;
+	animation-duration: 3s;
+}
+@keyframes bar-ani-50 {
+	from {
+		width:0px;
+	}
+	to {
+		width:50%;
+	}
+}
+.bar-percent-60 {
+	color: black;
+	font-weight: bold;
+	width: 60%;
+	border-radius: 45px;
+	padding: 0 5px;
+	background-color: rgb(254, 211, 48);
+	animation-name: bar-ani-60;
+	animation-duration: 3s;
+}
+@keyframes bar-ani-60 {
+	from {
+		width:0px;
+	}
+	to {
+		width:60%;
+	}
+}
+.bar-percent-70 {
+	color: black;
+	font-weight: bold;
+	width: 70%;
+	border-radius: 45px;
+	padding: 0 5px;
+	background-color: rgb(254, 211, 48);
+	animation-name: bar-ani-70;
+	animation-duration: 3s;
+}
+@keyframes bar-ani-70 {
+	from {
+		width:0px;
+	}
+	to {
+		width:70%;
+	}
+}
+
+
+
+
+
+
+
+
+.facolor {
+	color: white;
+	margin: 10px;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+.facolor:hover {
+	color: rgb(254, 211, 48);
+}
+.icon-btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	background-color: transparent;
+	border: 0.005em solid transparent;
+	border-radius: 50px;
+}

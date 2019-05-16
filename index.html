@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>履歷表</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="gotopbox">
+        <a id="gotop" href="#all" title=""><i class="fas fa-angle-up"></i></a>
+    </div>
+    <div id="all">
+        <div id="border">
+            <div id="left">
+                <h1>蘇韋綸</h1>
+                <span class="underline">「 中原大學-資訊管理學系 」</span>
+                <br>
+                <br>
+                <h3>『 希望過個不後悔的人生 』</h3> &emsp;&emsp;
+                <span id="mid-title" 　class="space">個人網站： </span><a href="https://glenn1blog.github.io/personalweb/personalweb/index.html" class="button" target="_black">Github</a>
+                <br>
+                <br>
+                <br>
+                <span class="underline">程式技能</span>
+                <h3>C#</h3>
+                <div class="bar">
+                    <div class="bar-percent-60">60%</div>
+                </div>
+                <h3>Java</h3>
+                <div class="bar">
+                    <div class="bar-percent-50">50%</div>
+                </div>
+                <h3>Python</h3>
+                <div class="bar">
+                    <div class="bar-percent-20">20%</div>
+                </div>
+                <h3>HTML CSS JS</h3>
+                <div class="bar">
+                    <div class="bar-percent-70">70%</div>
+                </div>
+                <h3>JSP</h3>
+                <div class="bar">
+                    <div class="bar-percent-70">70%</div>
+                </div>
+            </div>
+            <div id="right">
+                <br><br><br>
+                <span class="underline">大學經歷</span>
+                <br>
+                <div id="timeline">
+                <h3>大學一年級<span>－上學期</span></h3>
+                <p>管理學-中藥羊奶頭愛心販賣</p>
+
+                <h3>大學一年級<span>－下學期</span></h3>
+                <p>企業概論-中原文創帆布袋</p>
+
+                <h3>大學二年級<span>－上學期</span></h3>
+                <p>網頁程式設計-文具商品購物網站（後端）</p>
+
+                <h3>大學二年級<span>－下學期</span></h3>
+                <p>多媒體期中專案-中原資管介紹</p>
+                </div>
+                <br>
+                <span class="underline">聯絡資訊</span>
+                <br>
+                <br>
+                <div class="text-center">
+                    <a class="icon-btn" href="https://www.instagram.com/glenn_0712" target="_blank"><i class="fab fa-instagram facolor fa-3x"></i></a>
+                    <a class="icon-btn" href="https://www.facebook.com/profile.php?id=100002800020373" target="_blank"><i class="fab fa-facebook facolor fa-3x"></i></a>
+                    <a class="icon-btn" href="mailto:glenn1blog@gmail.com" target="_blank"><i class="far fa-envelope facolor fa-3x"></i></a>
+                    <a class="icon-btn" href="tel:0923456789" target="_blank"><i class="fas fa-phone facolor fa-3x"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("gotop").className = "gotopA";
+            } else {
+                document.getElementById("gotop").className = "gotopB";
+            }
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("gotopbox").className = "gotopA";
+            } else {
+                document.getElementById("gotopbox").className = "gotopB";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
