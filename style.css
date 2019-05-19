@@ -49,11 +49,35 @@ html {
 	margin-top: 10%;
 	margin-bottom: 6%;
 }
-h1 {
+#titlebox {
+	position: relative;
+}
+#title {
 	font-size: 55px;
 	margin-bottom: 18px;
 	margin-left: 0.8em;
+	position: relative;
+	transition: 0.4s;
+	margin-top: 0.67em;
+    margin-bottom: 0.67em;
 }
+#title:hover {
+	color: rgb(254, 211, 48);
+}
+#titlebox:hover + #hid {
+	width: 70%;
+}
+/*#titlebox:hover img{
+	opacity: 1;
+}
+img {
+	width: 45%;
+	position: absolute;
+	top: -0.4em;
+	left: 15em;
+	opacity: 0;
+	transition: 0.4s;
+}*/
 h3 {
 
 	color: rgb(254, 211, 48);
@@ -63,10 +87,6 @@ h3 {
 h3 > span {
 	color: white;
 	font-size: 16px;
-}
-#timeline > p {
-	margin-left: 20px;
-	color: rgba(255,255,255,0.7);
 }
 .underline {
 	font-size: 1.5em;
@@ -82,6 +102,9 @@ h3 > span {
 	margin-right: 1.3em;
 }
 .button {
+	display: block;
+	margin: 8%;
+	width: 82px;
 	background-color: rgb(53, 59, 72);
 	color: white;
 	border: 3px solid rgb(254, 211, 48);
@@ -104,17 +127,27 @@ h3 > span {
 	background-color: white;
 	border-radius: 45px;
 	z-index: -1;
-	
+	padding: 1.3%;
 }
-.bar-percent-20 {
+.bar-long {
+	text-align: right;
 	color: black;
 	font-weight: bold;
-	width: 20%;
 	border-radius: 45px;
 	padding: 0 5px;
 	background-color: rgb(254, 211, 48);
-	animation-name: bar-ani-20;
-	animation-duration: 3s;
+}
+@keyframes word {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.bar-percent-20 {
+	width: 20%;
+	animation: bar-ani-20 3s, word 2s;
 }
 @keyframes bar-ani-20 {
 	from {
@@ -125,14 +158,8 @@ h3 > span {
 	}
 }
 .bar-percent-50 {
-	color: black;
-	font-weight: bold;
 	width: 50%;
-	border-radius: 45px;
-	padding: 0 5px;
-	background-color: rgb(254, 211, 48);
-	animation-name: bar-ani-50;
-	animation-duration: 3s;
+	animation: bar-ani-50 3s, word 2s;
 }
 @keyframes bar-ani-50 {
 	from {
@@ -143,14 +170,8 @@ h3 > span {
 	}
 }
 .bar-percent-60 {
-	color: black;
-	font-weight: bold;
 	width: 60%;
-	border-radius: 45px;
-	padding: 0 5px;
-	background-color: rgb(254, 211, 48);
-	animation-name: bar-ani-60;
-	animation-duration: 3s;
+	animation: bar-ani-60 3s, word 2s;
 }
 @keyframes bar-ani-60 {
 	from {
@@ -161,14 +182,8 @@ h3 > span {
 	}
 }
 .bar-percent-70 {
-	color: black;
-	font-weight: bold;
 	width: 70%;
-	border-radius: 45px;
-	padding: 0 5px;
-	background-color: rgb(254, 211, 48);
-	animation-name: bar-ani-70;
-	animation-duration: 3s;
+	animation: bar-ani-70 3s, word 2s;
 }
 @keyframes bar-ani-70 {
 	from {
@@ -178,19 +193,21 @@ h3 > span {
 		width:70%;
 	}
 }
-
-
-
-
-
-
-
-
+#hid {
+	width: 0%;
+}
+#hid > img {
+	width: 100%;
+}
+#timeline > p {
+	margin-left: 20px;
+	color: rgba(255,255,255,0.7);
+}
 .facolor {
 	color: white;
 	margin: 10px;
 	border-radius: 50px;
-	transition: 0.3s;
+	transition: 0.7s;
 }
 .facolor:hover {
 	color: rgb(254, 211, 48);
