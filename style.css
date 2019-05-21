@@ -64,20 +64,9 @@ html {
 #title:hover {
 	color: rgb(254, 211, 48);
 }
-#titlebox:hover + #hid {
+#right:hover #hid{
 	width: 70%;
 }
-/*#titlebox:hover img{
-	opacity: 1;
-}
-img {
-	width: 45%;
-	position: absolute;
-	top: -0.4em;
-	left: 15em;
-	opacity: 0;
-	transition: 0.4s;
-}*/
 h3 {
 
 	color: rgb(254, 211, 48);
@@ -195,6 +184,7 @@ h3 > span {
 }
 #hid {
 	width: 0%;
+	transition: 0.5s;
 }
 #hid > img {
 	width: 100%;
@@ -202,6 +192,10 @@ h3 > span {
 #timeline > p {
 	margin-left: 20px;
 	color: rgba(255,255,255,0.7);
+	transition: 0.5s;
+}
+#timeline > p:hover {
+	color: rgb(254, 211, 48);
 }
 .facolor {
 	color: white;
