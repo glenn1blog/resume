@@ -9,6 +9,7 @@
 <style type="text/css">
     @import"style.css";
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <body>
     <div id="gotopbox">
         <a id="gotop" href="#all" title=""><i class="fas fa-angle-up"></i></a>
@@ -19,7 +20,7 @@
                 <div id="titlebox">
                     <h1 id="title">蘇韋綸</h1>
                 </div>
-                
+
                 <span class="underline">「 中原大學-資訊管理學系 」</span>
                 <br>
                 <br>
@@ -48,21 +49,26 @@
                 </div>
             </div>
             <div id="right">
-                <br><br><br>
+                <br>
+                <br>
+                <div id="hid">
+                    <img src="photo.jpg" alt="">
+                </div>
+                <br>
                 <span class="underline">大學經歷</span>
                 <br>
                 <div id="timeline">
-                <h3>大學一年級<span>－上學期</span></h3>
-                <p>管理學-中藥羊奶頭愛心販賣</p>
+                    <h3>大學一年級<span>－上學期</span></h3>
+                    <p>管理學-中藥羊奶頭愛心販賣</p>
 
-                <h3>大學一年級<span>－下學期</span></h3>
-                <p>企業概論-中原文創帆布袋</p>
+                    <h3>大學一年級<span>－下學期</span></h3>
+                    <p>企業概論-中原文創帆布袋</p>
 
-                <h3>大學二年級<span>－上學期</span></h3>
-                <p>網頁程式設計-文具商品購物網站（後端）</p>
+                    <h3>大學二年級<span>－上學期</span></h3>
+                    <p>網頁程式設計-文具商品購物網站（後端）</p>
 
-                <h3>大學二年級<span>－下學期</span></h3>
-                <p>多媒體期中專案-中原資管介紹</p>
+                    <h3>大學二年級<span>－下學期</span></h3>
+                    <p>多媒體期中專案-中原資管介紹</p>
                 </div>
                 <br>
                 <span class="underline">聯絡資訊</span>
@@ -75,9 +81,6 @@
                     <a class="icon-btn" href="tel:0923456789" target="_blank"><i class="fas fa-phone facolor fa-3x"></i></a>
                 </div>
                 <br>
-                <div id="hid">
-                    <img src="photo.jpg" alt="">
-                </div>
             </div>
         </div>
     </div>
@@ -99,7 +102,17 @@
             }
         }
     </script>
-
+    <script> 
+    	$(document).ready(function(){
+			$("#titlebox").hover(
+				function(){
+					$("#hid").css("width","80%");
+				},function(){
+					$("#hid").css("width","0%");
+				}
+			);
+		});
+    </script>
 </body>
 
 </html>
