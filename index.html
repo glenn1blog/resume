@@ -11,9 +11,6 @@
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <body>
-    <div id="gotopbox">
-        <a id="gotop" href="#all" title=""><i class="fas fa-angle-up"></i></a>
-    </div>
     <div id="all">
         <div id="border">
             <div id="left">
@@ -39,9 +36,17 @@
                 <div class="bar">
                     <div class="bar-long bar-percent-20">20%</div>
                 </div>
-                <h3>HTML CSS JS</h3>
+                <h3>HTML (PUG)</h3>
                 <div class="bar">
                     <div class="bar-long bar-percent-70">70%</div>
+                </div>
+                <h3>CSS (SASS)</h3>
+                <div class="bar">
+                    <div class="bar-long bar-percent-70">70%</div>
+                </div>
+                <h3>JS (JQuery Vue.js)</h3>
+                <div class="bar">
+                    <div class="bar-long bar-percent-50">50%</div>
                 </div>
                 <h3>JSP</h3>
                 <div class="bar">
@@ -84,24 +89,19 @@
             </div>
         </div>
     </div>
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
+    <div id="back-to-top">︿</div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-        function myFunction() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.getElementById("gotop").className = "gotopA";
-            } else {
-                document.getElementById("gotop").className = "gotopB";
-            }
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.getElementById("gotopbox").className = "gotopA";
-            } else {
-                document.getElementById("gotopbox").className = "gotopB";
-            }
-        }
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 2
+        });
     </script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
     <script> 
     	$(document).ready(function(){
 			$("#titlebox").hover(
